@@ -1,5 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using UtmBuiolder.Core.ValueObjects.Exceptions;
+﻿using UtmBuiolder.Core.ValueObjects.Exceptions;
 
 namespace UtmBuiolder.Core.ValueObjects
 {
@@ -20,6 +19,7 @@ namespace UtmBuiolder.Core.ValueObjects
             Address = address;
            InvalidUrlException.ThowIfInvalidUrl(Address);
         }
+       
     }
 }
 // Dica Validacao Flunt : https://github.com/andrebaltieri/Flunt
