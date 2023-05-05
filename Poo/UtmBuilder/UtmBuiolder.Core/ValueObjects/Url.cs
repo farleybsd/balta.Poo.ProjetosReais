@@ -1,7 +1,11 @@
-﻿namespace UtmBuiolder.Core.ValueObjects
+﻿using System.Text.RegularExpressions;
+using UtmBuiolder.Core.ValueObjects.Exceptions;
+
+namespace UtmBuiolder.Core.ValueObjects
 {
     public class Url : ValueObject
     {
+       
         /// <summary>
         /// Address of URL (Web Site Link)
         /// </summary>
@@ -14,6 +18,7 @@
         public Url(string address)
         {
             Address = address;
+           InvalidUrlException.ThowIfInvalidUrl(Address);
         }
     }
 }

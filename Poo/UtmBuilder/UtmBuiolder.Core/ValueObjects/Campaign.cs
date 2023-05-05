@@ -1,4 +1,6 @@
-﻿namespace UtmBuiolder.Core.ValueObjects
+﻿using UtmBuiolder.Core.ValueObjects.Exceptions;
+
+namespace UtmBuiolder.Core.ValueObjects
 {
     public class Campaign : ValueObject
     {
@@ -45,6 +47,9 @@
             Id = id;
             Term = term;
             Content = content;
+            InvalidCampaingException.ThrowIfNull(Soruce, "Source is invalid");
+            InvalidCampaingException.ThrowIfNull(Medium, "Medium is invalid");
+            InvalidCampaingException.ThrowIfNull(Name, "Name is invalid");
         }
 
     }

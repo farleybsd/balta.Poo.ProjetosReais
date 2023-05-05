@@ -19,4 +19,4 @@ namespace UtmBuiolder.Core
         public Campaign Campaign { get;private set; }
     }
 }
-//Aqui: https://balta.io/player/assistir/dfa3752e-4bd5-4101-bafb-ff3afcf39930/5a8bbb99-bb2f-42e0-aaa3-843857bfcb3c
+//Aqui:
